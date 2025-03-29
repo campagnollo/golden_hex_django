@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        .gallery-item-container {
+            overflow: hidden;
+            position: absolute;
+            width: 940px;
+            height: 340.5px;
+            border: 1px solid rgba(204, 204, 204, 0.75);
+            transition: opacity .2s ease;
+            opacity: 1;
+            display: block;
+        }
+        .gallery-item-wrapper {
+            height: 340.5px;
+            width: 454px;
+        }
+        .gallery-item-common-info {
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 100%;
+            width: 486px;
+            padding: 0 36px;
+        }
+        .gallery-item-content {
+            width: 454px;
+            height: 340.5px;
+        }
+        .gallery-item-common-info-outer {
+            height: 340.5px;
+            float: right;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="pro-gallery-parent-container" role="region" aria-label="Blog feed">
+        <div id="pro-gallery-container-pro-blog" class="pro-gallery inline-styles ltr">
+            <div id="pro-gallery-margin-container-pro-blog" class="pro-gallery-margin-container">
+
+
+
+                <!-- store expansion
+                <div class="item-link-wrapper" tabindex="-1">
+                    <div class="gallery-item-container" style="top: 372.5px; left: 0;">
+                        <div style="float:left">
+                            <div class="gallery-item-wrapper">
+                                <div class="gallery-item-content">
+                                    <picture>
+                                        <img alt="Exciting News! We MOVED & EXPANDED!" src="static/blog/store_isles.webp" class="gallery-item-visible" style="width:100%; height:100%;"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-common-info-outer">
+                            <div class="gallery-item-common-info">
+                                <h2 style="font-size:28px;">Exciting News! We MOVED & EXPANDED!</h2>
+                                <p style="font-size:16px;">From California Sunshine to Triangle Flavors: Golden Hex Expands with European & Mediterranean Delights, becoming the LARGEST European...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- New Year -->
+                <div class="item-link-wrapper" tabindex="-1">
+                    <div class="gallery-item-container" style="top: 372.5px; left: 0;">
+                        <div style="float:left">
+                            <div class="gallery-item-wrapper">
+                                <div class="gallery-item-content">
+                                    <picture>
+                                        <img alt="Our New Year Favorite Menu" src="static/blog/olivier_salad.webp" class="gallery-item-visible" style="width:100%; height:100%;"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-common-info-outer">
+                            <div class="gallery-item-common-info">
+                                <h2 style="font-size:28px;">Our New Year Favorite Menu</h2>
+                                <p style="font-size:16px;">What's for the New Year? Traditionally, Olivier (aka Stolichny) would be our most favorite salad...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- one week old
+                <div class="item-link-wrapper" tabindex="-1">
+                    <div class="gallery-item-container" style="top: 372.5px; left: 0;">
+                        <div style="float:left">
+                            <div class="gallery-item-wrapper">
+                                <div class="gallery-item-content">
+                                    <picture>
+                                        <img alt="We are one week old!" src="static/blog/lovely_lady.webp" class="gallery-item-visible" style="width:100%; height:100%;"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-common-info-outer">
+                            <div class="gallery-item-common-info">
+                                <h2 style="font-size:28px;">We are one week old!</h2>
+                                <p style="font-size:16px;">Today is a week since Golden Hex was reborn. March 8th. International Women's Day. Since March 1st first day of opening, life at our...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- first day opening
+                <div class="item-link-wrapper" tabindex="-1">
+                    <div class="gallery-item-container" style="top: 372.5px; left: 0;">
+                        <div style="float:left">
+                            <div class="gallery-item-wrapper">
+                                <div class="gallery-item-content">
+                                    <picture>
+                                        <img alt="March 1st: First day of OPENING!" src="static/blog/first_day.webp" class="gallery-item-visible" style="width:100%; height:100%;"/>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item-common-info-outer">
+                            <div class="gallery-item-common-info">
+                                <h2 style="font-size:28px;">March 1st: First day of OPENING!</h2>
+                                <p style="font-size:16px;">Golden Hex store opened the doors on March 1st and what a busy day that was! Our first customers came before the store was open ahead of...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

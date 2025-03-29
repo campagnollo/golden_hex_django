@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block title %} Products {% endblock %}
+
+{% block content %}
+<main id="PAGES_CONTAINER" class="PAGES_CONTAINER" tabindex="-1" data-main-content="true">
+    <div class="SITE_PAGES">
+        <section class="product-section">
+            <h1 class="title">PRODUCTS</h1>
+            <p class="store-description">
+                Golden Hex Foods is a gourmet food store in the Triangle (RTP) region, North Carolina.
+                We specialize in European and Mediterranean foods. Our store offers a wide selection of imported goods,
+                quality meats and seafood, cheeses, dairy products, sweets, and other groceries.
+            </p>
+
+            {% load static %}
+
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="{% static 'products_images/sweets.avif' %}" alt="sweets">
+                    <h2>Sweets</h2>
+                    <p>Golden Hex Foods offers a variety of sweets and desserts from Russia, Ukraine, Belarus, Armenia,
+                        Israel, and many other countries. Candies, cookies, cakes, honey, preserves & other delicious
+                        desserts available.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="{% static 'products_images/meat_cheese_fish.avif' %}" alt="meat cheese fish">
+                    <h2>Meat, Cheese & Fish</h2>
+                    <p>Buy as little or as much as you want. Our owners will help you choose the best cold meats and
+                        cheeses, sliced to order or vacuum-sealed. We also sell smoked, marinated, and dry fish, plus
+                        red and black caviar!</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="{% static 'products_images/marinated.avif' %}" alt="marinated">
+                    <h2>Marinated Food & Condiments</h2>
+                    <p>Marinated and pickled vegetables, canned fish and meats, oils, sauces, and dips imported from
+                        around the world.</p>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="{% static 'products_images/drinks_juice_syrops.avif' %}" alt="drinks">
+                    <h2>Drinks, Juices & Syrups</h2>
+                    <p>Enjoy flavors from your homeland! Tarhun (tarragon drink), lemonade, kvass, mors, Borjomi, and
+                        more.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="{% static 'products_images/tea_coffee_chicory.avif' %}" alt="chai">
+                    <h2>Tea, Coffee & Chicory</h2>
+                    <p>Explore teas and coffee from around the world. Health enthusiasts will find a variety of herbal
+                        teas & chicory coffee.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="{% static 'products_images/kosher.avif' %}" alt="kosher">
+                    <h2>Kosher Food</h2>
+                    <p>We proudly bring a new selection of Kosher food to the region, including favorites imported from
+                        Israel.</p>
+                </div>
+            </div>
+
+{% load static %}
+
+<div class="product-container">
+    <div class="product-card">
+        <img src="{% static 'products_images/sweets.avif' %}" alt="sweets">
+        <h2>Sweets</h2>
+        <p>Golden Hex Foods offers a variety of sweets and desserts from Russia, Ukraine, Belarus, Armenia,
+            Israel, and many other countries. Candies, cookies, cakes, honey, preserves & other delicious
+            desserts available.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="{% static 'products_images/meat_cheese_fish.avif' %}" alt="meat cheese fish">
+        <h2>Meat, Cheese & Fish</h2>
+        <p>Buy as little or as much as you want. Our owners will help you choose the best cold meats and
+            cheeses, sliced to order or vacuum-sealed. We also sell smoked, marinated, and dry fish, plus
+            red and black caviar!</p>
+    </div>
+
+    <div class="product-card">
+        <img src="{% static 'products_images/marinated.avif' %}" alt="marinated">
+        <h2>Marinated Food & Condiments</h2>
+        <p>Marinated and pickled vegetables, canned fish and meats, oils, sauces, and dips imported from
+            around the world.</p>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-card">
+        <img src="{% static 'products_images/drinks_juice_syrops.avif' %}" alt="drinks">
+        <h2>Drinks, Juices & Syrups</h2>
+        <p>Enjoy flavors from your homeland! Tarhun (tarragon drink), lemonade, kvass, mors, Borjomi, and
+            more.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="{% static 'products_images/tea_coffee_chicory.avif' %}" alt="chai">
+        <h2>Tea, Coffee & Chicory</h2>
+        <p>Explore teas and coffee from around the world. Health enthusiasts will find a variety of herbal
+            teas & chicory coffee.</p>
+    </div>
+
+    <div class="product-card">
+        <img src="{% static 'products_images/kosher.avif' %}" alt="kosher">
+        <h2>Kosher Food</h2>
+        <p>We proudly bring a new selection of Kosher food to the region, including favorites imported from
+            Israel.</p>
+    </div>
+</div>
+
+        </section>
+    </div>
+</main>
+
+<style>
+    .product-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .title {
+        font-family: "Brush Script MT", cursive;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .store-description {
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .product-card img {
+        width: 225px;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .product-origin {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: "Brush Script MT", cursive;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+</style>
+{% endblock %}
