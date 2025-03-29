@@ -1,7 +1,22 @@
+"""
+This module defines view functions for the Django application.
+
+Each view function renders a specific template in response to a request.
+"""
+
 from django.shortcuts import render, HttpResponse
 
 
 def home(request):
+    """
+    Render the home page template in response to a request.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered home page template.
+    """
     return render(request, 'home.html')
 
 
@@ -37,10 +52,6 @@ def products(request):
     return render(request, 'products.html')
 
 
-def story(request):
-    return render(request, 'story.html')
-
-
 def videos(request):
     return render(request, 'videos.html')
 
@@ -49,5 +60,14 @@ def one_week(request):
     return render(request, 'we_are_one_week_old.html')
 
 
-def home_p(request):
+def dom(request):
+    """
+    Render the home page template in Russian in response to a request.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered home page template in Russian.
+    """
     return render(request, 'home_p.html')

@@ -1,3 +1,9 @@
+"""
+This module defines URL patterns for the Django application.
+
+Each URL pattern is associated with a view function from the views module.
+"""
+
 from django.urls import path
 from . import views
 
@@ -14,6 +20,5 @@ urlpatterns = [
     path("story", views.story, name="story"),
     path("videos", views.videos, name="videos"),
     path("one_week", views.one_week, name="one_week"),
-    path("home_russian", views.home_p, name="home_p"),
+    path("dom", views.dom, name="dom"),
 ]
-
