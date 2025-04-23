@@ -113,7 +113,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    BASE_DIR / "golden_hex_django/myapp/static",
+    BASE_DIR / "golden_hex_django_app/myapp/static",
 ]
 
 
