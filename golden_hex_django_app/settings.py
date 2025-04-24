@@ -112,7 +112,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'  # The URL to access static files
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # This should point to any static directories you have in your project
+    BASE_DIR / "myapp/static",  # This should point to any static directories you have in your project
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"  # This is where collectstatic will copy files to
 
