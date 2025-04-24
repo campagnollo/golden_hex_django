@@ -114,7 +114,8 @@ STATIC_URL = '/static/'  # The URL to access static files
 STATICFILES_DIRS = [
     BASE_DIR / "myapp/static"
 ]
-STATIC_ROOT = '/test_golden_hex_django/golden_hex_django/staticfiles'
+STATIC_ROOT = "/test_golden_hex_django/golden_hex_django/staticfiles/"
+
 
 
 
