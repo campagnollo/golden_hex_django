@@ -110,9 +110,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 STATIC_URL = '/static/'  # The URL to access static files
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # where you have shared/static files
-]
 STATIC_ROOT = "/golden_hex_django/staticfiles/"  # where the collected static files go
 
 
