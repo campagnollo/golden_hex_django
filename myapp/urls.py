@@ -21,4 +21,9 @@ urlpatterns = [
     path("videos", views.videos, name="videos"),
     path("one_week", views.one_week, name="one_week"),
     path("dom", views.dom, name="dom"),
+    path("exciting-news-we-moved-expanded", views.exciting_news_we_moved_expanded, name="exciting-news-we-moved"
+                                                                                        "-expanded"),
+    path("new_year_favorite_menu", views.new_year_favorite_menu, name="new_year_favorite_menu"),
+    path("we_are_one_week_old", views.we_are_one_week_old, name="we_are_one_week_old"),
+    path("first_day", views.first_day, name="first_day")
 ]

@@ -59,6 +59,18 @@ def videos(request):
 def one_week(request):
     return render(request, 'we_are_one_week_old.html')
 
+def exciting_news_we_moved_expanded(request):
+    return render(request, 'exciting-news-we-moved-expanded.html')
+
+def new_year_favorite_menu(request):
+    return render(request, 'new_year_favorite_menu.html')
+
+def we_are_one_week_old(request):
+    return render(request, 'we_are_one_week_old.html')
+
+def first_day(request):
+    return render(request, 'first_day.html')
+
 
 def dom(request):
     """
