@@ -5,6 +5,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      python-version:
+        description: 'Python version'
+        required: false
+        default: '3.10'
 
 jobs:
   build:
@@ -13,7 +19,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.10]
+        python-version: [${{ github.event.inputs.python-version || '3.10' }}]
 
     steps:
     - uses: actions/checkout@v4
